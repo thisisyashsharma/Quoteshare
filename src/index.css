@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@100&family=Montserrat:wght@300&family=Roboto:ital,wght@0,100;0,100;1,100&display=swap');
+
+body {
+  /* font-family: sans-serif; */
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  margin-bottom:8rem;
+  background-color: hsl(240, 1%, 13%);
+}
+
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  font-family: sans-serif;
+  font-weight: 6px;
+  font-size: 12px;
+}
+
+.focused {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+
+  color: rgba(255, 255, 255, 0.727);
+  background-color: rgba(66, 51, 104, 0.316);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0);
+  border-radius: 0.3rem;
+  transition: all 0.05s;
+
+ 
+}
+@media (max-width: 600px) {
+  .btn {
+    width:100%;
+  }
+}
+  
+ 
+
+.btn:hover,
+.btn:active {
+  color: rgb(0, 132, 255);
+  background-color: rgba(57, 70, 168, 0.35);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+  transform: scale(0.9);
+}
+
+.btn--flat {
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 12px;
+  text-decoration: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  /* color: teal; */
+  border-radius: 7px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 86, 177);
+  box-shadow: 2px 3px 10px rgba(26, 26, 26, 0);
+}
+
+.btn--flat:hover {
+  background-color: rgb(0, 100, 208);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.912);
+}
+.btn--flat:active {
+  background-color: rgb(0, 67, 167);
+  box-shadow: 2px 3px 90px rgba(0, 0, 0, 0);
+  /* border-color: #11acac; */
+}
+
+ul .bottonLink {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button,
+div,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
