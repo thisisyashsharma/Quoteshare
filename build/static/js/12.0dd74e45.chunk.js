@@ -1,2 +1,0 @@
-(this["webpackJsonpreact-complete-guide"]=this["webpackJsonpreact-complete-guide"]||[]).push([[12],{66:function(e,c,t){"use strict";t.r(c);var s=t(52),n=t(1);c.default=function(){return Object(n.jsx)("div",{className:"centered",children:Object(n.jsxs)("h2",{children:[Object(n.jsx)("p",{children:"Coming Soon Ninja's "}),Object(n.jsx)(s.b,{})]})})}}}]);
-//# sourceMappingURL=12.0dd74e45.chunk.js.map

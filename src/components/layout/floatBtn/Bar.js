@@ -11,6 +11,7 @@ import { NavLink } from "react-router-dom";
 const Bar = () => {
   return (
     <>
+      <div  className={styles.container0}></div>
       <div className={styles.container}>
         <li>
           <div>

@@ -40,7 +40,7 @@ body {
   color: rgba(255, 255, 255, 0.727);
   background-color: rgba(66, 51, 104, 0.316);
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0);
-  border-radius: 0.3rem;
+  border-radius: 0.6rem;
   transition: all 0.05s;
 
  
@@ -62,27 +62,34 @@ body {
 }
 
 .btn--flat {
+  margin-top:1rem;
   cursor: pointer;
   font-family: sans-serif;
   font-weight: 12px;
   text-decoration: none;
-  border: none;
+  border: 0.4rem solid rgb(0, 69, 143);
   padding: 0.75rem 1.5rem;
-  /* color: teal; */
-  border-radius: 7px;
+  border-radius: 0.8rem;
   color: rgb(255, 255, 255);
   background-color: rgb(0, 86, 177);
   box-shadow: 2px 3px 10px rgba(26, 26, 26, 0);
+  transition: all 0.2s;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn--flat:hover {
-  background-color: rgb(0, 100, 208);
+  background-color: rgb(0, 68, 204);
+  border-color: rgb(0, 34, 157);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.912);
 }
 .btn--flat:active {
   background-color: rgb(0, 67, 167);
+  border-color: rgb(0, 45, 108);
   box-shadow: 2px 3px 90px rgba(0, 0, 0, 0);
-  /* border-color: #11acac; */
+  transform: scale(0.9);
 }
 
 ul .bottonLink {

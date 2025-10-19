@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_complete_guide=self.webpackChunkreact_complete_guide||[]).push([[900],{900:(e,s,c)=>{c.r(s),c.d(s,{default:()=>d});var n=c(860),a=c(579);const d=()=>(0,a.jsx)("div",{className:"centered",children:(0,a.jsxs)("h2",{children:[(0,a.jsx)("p",{children:"Coming Soon Ninja's "}),(0,a.jsx)(n.R4Z,{})]})})}}]);
+//# sourceMappingURL=900.f4c3075b.chunk.js.map

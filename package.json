@@ -8,17 +8,20 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+    "cross-env": "7.0.3",
     "mdi-material-ui": "^7.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icon": "^1.0.0",
     "react-icons": "^4.3.1",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.1",
+    "react-scripts": "5.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "set PORT=30204 && react-scripts start",
+    "start": "cross-env PORT=30204 react-scripts start",
+    "watch-status": "npx wait-on http://localhost:30204 && powershell -Command \"while ($true) {Write-Host ( ' ok ' + (Get-Date -Format 'HH:mm:ss') + ' App is running at http://localhost:30204'); Start-Sleep -Seconds 10}\"",
+    "dev": "concurrently -n app,status \"npm:start\" \"npm:watch-status\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "wait-on": "^9.0.1"
   }
 }

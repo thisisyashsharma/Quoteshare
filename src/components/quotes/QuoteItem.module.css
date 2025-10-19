@@ -1,22 +1,23 @@
 .item {
   margin: 1rem 0;
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   border-radius: 15px;
   background-color: hsla(229, 100%, 13%, 0);
-  box-shadow: 0  3px 10px rgba(0, 0, 0, 0.718);
-  
-  color:rgb(94, 140, 255);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.461);
+
+  color: rgb(169, 193, 255);
   transition: all 0.05s;
 }
-
-.item:hover{
-  transform: scale(0.92);
-  /* box-shadow: 4px 4px 27px rgba(0, 0, 0, 0); */
-  /* background-color: rgba(147, 147, 255, 0.199); */
+.item:hover {
   background-color: hsla(228, 27%, 65%, 0.081);
+  color: #ffffff;
+}
+
+.item:active {
+  transform: scale(0.92);
+  box-shadow: 4px 4px 27px rgba(0, 0, 0, 0);
   color: #ffffff;
 }
 
@@ -26,7 +27,7 @@
 
 .item figure {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   width: 90%;
 }
 
@@ -34,28 +35,46 @@
   margin: 0;
   text-align: left;
   font-size: 1.5rem;
-  color: #e4e4e4;
+  color: #ececec;
 }
-.item blockquote:hover {
-  color:rgb(255, 255, 255);
+.item blockquote:hover,
+.item blockquote:active {
+  color: rgb(255, 255, 255);
 }
 .item p {
   margin: 0;
   margin-bottom: 0.25rem;
 }
 
-
 .item figcaption {
   font-style: italic;
   color: #566d6d;
 }
 .item figcaption:hover {
-  color:rgb(197, 206, 255);
+  color: rgb(197, 206, 255);
+}
+.item div {
+  margin:0;
+  width: 10%;
+  display: flex;
+  bottom:1rem;
+  justify-content:center;
+  align-items:center;
 }
 
-.item div{
-  padding:0.25rem 0.7rem;
-  border-radius: 0.4rem;
-  background-color:rgba(34, 57, 161, 0.231);
+.item div button {
+
+  border-radius: 0.7rem;
+  padding: 0.35rem 0.7rem;
+  border: 3px solid rgb(51, 51, 84);
+  background-color: rgba(48, 25, 25, 0);
 }
- 
+.item div button:hover {
+  background-color: rgb(112, 45, 45);
+  border-color: rgb(255, 0, 119);
+  box-shadow: 3px 3px 20px rgba(255, 0, 115, 0.916);
+  transform: scale(1);
+}
+.item div button:active {
+  transform: scale(0.9);
+}

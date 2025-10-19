@@ -7,7 +7,9 @@ const Contact = () => {
       <section className={styles.section}>
         <h2>About Developer</h2>
         <div className={styles.container}>
-          <h3>hii, I'm Yash,</h3>
+          <div className={styles.shimmer}></div>
+          <div className={styles.shimmer}></div>
+          <h3>hiii, I'm Yash 😉</h3>
         </div>
       </section>
     </>

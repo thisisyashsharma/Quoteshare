@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Montserrat:wght@300&family=Roboto:ital,wght@0,700;0,700;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Montserrat:wght@300&family=Roboto:ital,wght@0,700;0,700;1,500&display=swap");
 
 .container {
   display: none;
 }
 
 @media (max-width: 700px) {
+  .container0 {
+    cursor: pointer;
+    position: fixed;
+    bottom: 5.3rem;
+    left: 0;
+    background-color: rgb(33, 38, 50);
+    width: 100%;
+    height: 0.3rem;
+  }
   .container {
     cursor: pointer;
     position: fixed;
@@ -12,19 +21,18 @@
     bottom: 0rem;
     font-size: 1.4rem;
     left: 0;
-    /* right:0rem; */
     height: 5.3rem;
     width: 100%;
     color: hsl(0, 0%, 77%);
-    border: none;
+    /* border: 2px solid rgb(36, 36, 36); */
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 9;
 
-    background: hsl(240, 9%, 15%);
-    border-top: 0.1rem solid hsl(255, 6%, 15%);
+    background-color: hsla(240, 42%, 7%, 0.214);
+    backdrop-filter: blur(30px);
   }
 
   .container li {
@@ -36,34 +44,32 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    /* border: 0.1rem solid lightgrey; */
   }
   .container li div a {
     margin: 0rem 0 0.2rem 0;
     font-size: 1.7rem;
     padding: 0.45rem 1.6rem;
     border-radius: 2rem;
-    transition: all 0.07s;
+    transition: all 0.3s;
 
     display: flex;
     align-items: center;
 
-    color: hsl(0, 0%, 76%);
+    color: hsl(0, 0%, 75%);
   }
 
   .container li div:hover > a,
   .container li div a:active,
   .container li div a.active {
-    background-color: hsla(225, 100%, 75%, 0.163);
-    transform: scale(0.85);
-    color: rgb(220, 231, 255);
-    font-weight: bold;
+    background-color: hsla(225, 100%, 58%, 0.163);
+    transform: scale(0.95);
+    color: rgb(64, 115, 255);
   }
 
   .container li span {
     font-size: 0.9rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
+    color: rgb(162, 162, 162);
   }
 }
