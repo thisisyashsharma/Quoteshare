@@ -1,0 +1,26 @@
+.delete {
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.8rem;
+  color: rgb(255, 255, 255);
+  border: 0.4rem solid rgb(141, 0, 52);
+  background-color: rgba(255, 0, 0, 0.906);
+  box-shadow: 2px 3px 10px rgba(26, 26, 26, 0);
+  transition: all 0.2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--flat:hover {
+  border-color: rgb(255, 0, 93);
+  background-color: rgb(208, 0, 35);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.912);
+}
+.btn--flat:active {
+  border-color: rgb(172, 0, 63);
+  background-color: rgba(180, 0, 0, 0.723);
+  box-shadow: 2px 3px 90px rgba(0, 0, 0, 0);
+  transform: scale(0.9);
+}

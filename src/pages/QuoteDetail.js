@@ -7,6 +7,7 @@ import useHttp from "../hooks/use-http";
 import { getSingleQuote } from "../lib/api";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
 import { RiRefreshLine } from "react-icons/ri";
+import styles from "./QuoteDetail.module.css";
 
 const QuoteDetail = () => {
   const match = useRouteMatch();
@@ -49,6 +50,9 @@ const QuoteDetail = () => {
           <Link className="btn--flat" to={`${match.url}/comments`}>
             Load Comments <RiRefreshLine />
           </Link>
+          <button  className={`${styles["btn--flat"]} ${styles.delete}`}>
+            <span> delete </span>
+          </button>
         </div>
       </Route>
       <Route path={`${match.path}/comments`}>
