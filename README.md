@@ -18,7 +18,7 @@ No unnecessary complexity, no overengineering — just a solid, shippable fronte
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 TechStack
 
 - **Frontend:** React (Create React App)
 - **Styling:** CSS
